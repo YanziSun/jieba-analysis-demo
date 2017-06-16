@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Jieba4j Demo Site</title>
+</head>
+<body>
+<style type="text/css">
+	#Top{
+		text-align: center;
+		background-color: #000000;
+		color: #ffffff;
+		height: 30px;
+	}
+
+	#Wrapper{
+		text-align: center;
+	}
+
+	#Content{
+		width: 960px;
+		margin: 0 auto 0 auto;
+	}
+
+	#Bottom{
+		text-align: center;
+	}
+</style>
+
+<div id="Top">
+	<h2>Demo of Jieba4j</h2>
+</div>
+<br/>
+<div id="Wrapper">
+	<div id="Content">
+		<form action="/" method="post">
+		<div>
+			<textarea rows="15" cols="100" name="text">{{content}}</textarea>
+		</div>
+		<span>
+			<input type="radio" name="opt" value="1" {{selected(1)}}/>Á¥¢Â?ïÊ®°Â??
+		</span>
+		<span>
+			<input type="radio" name="opt" value="2" {{selected(2)}}/>?êúÁ¥¢Ê®°Âº?
+		</span>
+		<input type="submit" value="ÂºÄÂßã?àÜËØç"/>
+		<input type="button" value="?áçÁΩ?" onclick="javascript:window.location.href='/'"/>
+	</div>
+</form>
+</div>
+<!--
+<div id="Wrapper">
+	<div id="Content">
+		<form action="/adddict" method="post">
+		<div>
+			<textarea rows="15" cols="100" name="text">{{userdict}}</textarea>
+		</div>
+		<input type="submit" value="Ê∑ªÂä?ËØç?Ö?"/>
+		<input type="button" value="?áçÁΩ?" onclick="javascript:window.location.href='/'"/>
+	</div>
+</form>
+</div>
+-->
+<div id="Bottom">
+	<span>‰Ωú?ÄÖÂæ??çöÔºö<a href="http://weibo.com/1286810600">sls</a></span>
+
+</div>
+</body>
+</html>
